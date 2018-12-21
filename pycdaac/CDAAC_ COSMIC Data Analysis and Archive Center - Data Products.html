@@ -1,0 +1,2459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<META http-equiv="content-type" content="text/html; charset=utf-8"/>
+<META name="AUTHOR" content="Doug Hunt - Maggie Sleziak">
+<LINK rel="stylesheet" type="text/css" href="/cdaac/cdaacMain.css">
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAElu-nYRXTR9MI1sy82gTduJwyuE9RDvE&sensor=false"></script>
+<script type="text/javascript" src="/cdaac/jsFiles/infobubble.js"></script>
+<LINK REL="icon" HREF="/images/cosmic.png" TYPE="image/png">
+<SCRIPT src="/cdaac/default.js"></SCRIPT>
+
+<TITLE>CDAAC: COSMIC Data Analysis and Archive Center - Data Products </TITLE>
+
+<!-- Change color of link top nav if in that page -->
+<style type="text/css">
+    #center {color:#477CE8;}
+</style>
+
+<!-- Change color of link sub nav if in that page -->
+<style type="text/css">
+    #subProducts {color:#e5a743}
+</style>
+
+<!-- Change color of link for second sub navigation if in that page - using in the doc area -->
+
+
+
+</HEAD>
+
+<BODY style="background-color: #cbd4e7" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<BR>
+<CENTER>
+<TABLE class="decor" WIDTH="80%" style="border-color: #477CE8">
+
+  <TR bgcolor="#FFFFFF"><!---Backgroud for top image/cell--->
+  <TD><img src=/images/logoCdaac.jpg width="760" height="47" border="0" alt="CDAAC"></TD>  <!-- This is the main logo -->
+  </TR><!---End Top image and navigation bar-->
+
+  <TR style="background-image:url(/images/space2.gif)">
+  <TD height="30">
+  <!-- TOP MAIN NAVIGATION -->  
+    <table align="left" border="0" cellpadding="1">
+    <tr >
+    <td>
+     &nbsp;&nbsp;<b><a class="menu" href="/cdaac/index.html"  target="_self" id="home">Home Page</a></b>&nbsp;&nbsp;
+    </td>
+    
+    <td>
+     &nbsp;&nbsp;<b><a class="menu" href="http://cdaac-www.cosmic.ucar.edu/cdaac/status.html" id="status">Current Status</a></b>&nbsp;&nbsp;
+    </td>
+    <td>
+     &nbsp;&nbsp;<b><a class="menu" href="http://cdaac-www.cosmic.ucar.edu/cdaac/products.html" id="center">Data Center</a></b>&nbsp;&nbsp;
+    </td>
+    <td>
+     &nbsp;&nbsp;<b><a class="menu" href="http://cdaac-www.cosmic.ucar.edu/cdaac/research.html" id="research">Research Tools</a></b>&nbsp;&nbsp;
+    </td>
+    <td>
+     &nbsp;&nbsp;<b><a class="menu" href="http://cdaac-www.cosmic.ucar.edu/cdaac/postProcess.html" id="post">Post Process Results</a></b>&nbsp;&nbsp;
+    </td>
+    <td>
+     &nbsp;&nbsp;<b><a class="menu" href="http://cdaac-www.cosmic.ucar.edu/cdaac/climateProcess.html" id="climate">Climate Processing</a></b>&nbsp;&nbsp;
+    </td>
+    
+    
+
+    
+    </tr>
+    </table>
+
+    
+    <b><a class="menu" href="/cdaac/login/"><P class="left navy" style="font-size:12px;font-weight: bold; position: absolute; top: 20px; left: 800px">Data Access Log In</a></b>
+    
+    
+ 
+  </TD>
+  </TR>
+
+    <!---If the page needs a sub navigation -->
+  <TR style="background-color: #477CE8">
+  <TD height="20">
+    <table align="left" border="0" cellpadding="1">
+    <tr >
+    <td>
+     &nbsp;&nbsp;<b><a class="submenu" href="/cdaac/products.html" id="subProducts" target="_self">Data Access</a></b>&nbsp;&nbsp;
+    </td>
+    <td>
+     &nbsp;&nbsp;<b><a class="submenu" href="/cdaac/DBif/cdaac_highlevel.cgi">Batch Data Downloads</a></b>&nbsp;&nbsp;
+    </td>
+    <td>
+     &nbsp;&nbsp;<b><a class="submenu" href="/cdaac/tar/rest.html" id="subRest">Data Download Interface</a></b>&nbsp;&nbsp;
+    </td>
+    <td>
+     &nbsp;&nbsp;<b><a class="submenu" href="ftp://cdaac-ftp.cosmic.ucar.edu/" target="new">FTP Access</a></b>&nbsp;&nbsp;
+    </td>
+    <td>
+     &nbsp;&nbsp;<b><a class="submenu" href="/cdaac/doc/formats.html" id="subFormats">File Formats</a></b>&nbsp;&nbsp;
+    </td>
+    <td>
+     &nbsp;&nbsp;<b><a class="submenu" href="/cdaac/doc/overview.html" id="subDoc">Documentation</a></b>&nbsp;&nbsp;
+    </td>
+    <td>
+    &nbsp;&nbsp;<b><a class="submenu" href="https://wiki.ucar.edu/display/cosmic/CDAAC+Data+Users+FAQ" >CDAAC Data Users FAQ</a></b>&nbsp;&nbsp;  
+    </td>
+  </tr>
+  </table>
+
+  </TD>
+  </TR>
+  <!---End of first sub navigation--->
+  
+
+
+  
+
+  <TR bgcolor="#FFFFFF" >
+  <TD><!---Content Cell-->
+     <TABLE border="0" cellpadding="12" width="100%"><!--- Main Content Table - This divides into two sections: Left and Center-->
+     <TR bgcolor="#FFFFFF" valign="top"><!---Main Content Row-->
+     
+          
+     <!--- start of center content-->
+     <TD VALIGN="top"><!--- START center cell --->
+       <CENTER>
+       <TABLE width="*" border="0" cellspacing="0" cellpadding="0">
+       <TR valign="top">
+       <TD VALIGN="top">
+       <!-- Cell context -->
+       <BR>
+
+
+
+
+
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="1000">
+<TR class="decor-hdr" align="middle">
+<TH align="middle" colspan="2"><B>CDAAC Data Products</B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD colspan="2" style = "text-align:left;">
+
+<center>
+<h3>We recommend to first use Re-processed data if available, then Post-processed if available, and finally Real-Time.</h3>
+<script type="text/javascript" src="https://cdaac-www.cosmic.ucar.edu/cdaac/dataAve.js"> </script>
+</center>
+<br>
+<hr>
+<P>
+A new reprocessing of COSMIC radio occultation data (2006-2014, ongoing) has been performed at CDAAC. The name of the mission is cosmic2013 and It is available for download via
+<P>
+(1) the CDAAC FTP batch data download interface (use this interface to receive large batches of data from multiple days):
+http://cdaac-www.cosmic.ucar.edu/cdaac/DBif/cdaac_highlevel.cgi
+(select 'batch data download', then select mission: cosmic2013)
+<BR>
+and
+<BR>
+(2) the CDAAC data download interface (use this interface to receive single or daily tar files):
+http://cdaac-www.cosmic.ucar.edu/cdaac/tar/rest.html
+select mission cosmic2013
+<P>
+New features of this reprocessing include:
+<UL>
+<LI> Bernese Version 5.2 </LI>
+<LI> Improved POD and excess phase processing </LI>
+<LI> New neutral atmospheric inversion software ('newroam'), which provides much higher occultation counts (1.2 million more occultations!)</LI>
+<LI> Uniform GPS clock corrections used throughout the reprocessing</LI>
+</UL>
+<BR>
+<hr>
+
+<P>Current release of COSMIC atmPrf and wetPrf data from CDAAC
+are now available on CISL Research Data Archive (RDA) at NCAR in dataset ds723.0
+<BR><a href="http://rda.ucar.edu/datasets/ds723.0" target="new">(http://rda.ucar.edu/datasets/ds723.0).</a>
+
+<P>The data files are the same as on CDAAC, but organized as monthly tar balls archived on
+CISL HPSS. Data requests through the "Data Access" tab at the above URL will be reviewed.
+Once approved, the requested data will be staged for downloading via web tools. This
+dataset requires the same access permission as on <a href="http://cdaac-www.cosmic.ucar.edu/cdaac/index.html">CDAAC's web site.</a>
+
+<P>Should you decide to download the COSMIC data from CISL RDA, please register on
+<a href="http://rda.ucar.edu">http://rda.ucar.edu</a> (top page, upper left side).
+
+<P>Please feel free to send your questions/comments to <a HREF="mailto:chifan@ucar.edu?subject=(COSMIC data)"> chifan@ucar.edu</a>.
+
+
+<BR>
+<!--
+<P><P>
+It has been noted by Barbara Pirsher (Wegener Center/UCAR) that the 'wet' temperature and pressure values from the 'wetPrf' profiles are not consistent between missions. This is due to the fact that different background model data were used in the 1D-VAR assimilation that is used to compute these profiles. This table shows the model currently used for each mission available on the CDAAC web site. We plan on using the ERA-40 interrim reanalysis for future reprocessings.
+<PRE>
+Mission              Background model
+<HR>
+GPSMET               ECMWF analysis
+GPSMETAS             ECMWF analysis
+CHAMP                ECMWF analysis
+COSMIC               ERA-40 interrim reanalysis
+GRACE-A              ERA-40 interrim reanalysis
+Metop-A/GRAS         ERA-40 interrim reanalysis
+SAC-C                ERA-40 interrim reanalysis
+TerraSAR-X           ERA-40 interrim reanalysis
+C/NOFS               ERA-40 interrim reanalysis
+</PRE>
+
+<P>
+Posted by Bill Schreiner and the CDAAC Team.
+
+<BR>
+<P><P>
+It has been noted by Shu-Ya Chen (UCAR) that some BUFR files processed before the end of 2010 can contain an error in longitude for certain levels.  Those occultations that cross the date line and thus jump from -180 to 180 degrees longitude can have some values scambled or incorrect in the area of the dateline crossing.
+<P>
+This is fixed in recent BUFR files and will be fixed for all files at the time of the next reprocessing.
+<P>
+<P>
+Posted by Doug Hunt and the CDAAC Team.
+-->
+</TD>
+</TR>
+
+
+<TR class="decor-line">
+<TD>
+<BR><B>Mission Summary</B>
+</TD>
+<TD>
+<BR><B>Data Access</B>
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD rowspan="3">
+<BR><a class="nav" href="javascript:newWindow('/cdaac/missions.html#cosmic')">COSMIC</a>
+</TD>
+<TD>
+<a class="nav" href="#cosmic2013">COSMIC 2013</a>: Re-Process COSMIC data with 2013 Software. 
+<BR>New features of this reprocessing include:
+<UL>
+<LI> Bernese Version 5.2
+<LI> Improved POD and excess phase processing
+<LI> New neutral atmospheric inversion software ('newroam'), which provides much higher occultation counts (1.2 million more occultations!)
+<LI> Uniform GPS clock corrections used throughout the reprocessing
+</UL>
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<a class="nav" href="#cosmic">COSMIC</a>: Post Processed data - Usually available after 6 weeks
+<BR>The current products have the following versions in their file names:
+<BR>2009.2650 -- All file types up to atmObj, including leoOrb, comClk, occTab
+<BR>2010.2640 -- All file types starting with atmPhs, including atmPrf, wetPrf
+<P>
+There are two different version types due to the fact that a fix was
+made to atmPhs processing late in the reprocessing.
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<a class="nav" href="#cosmicrt">COSMICRT</a>: Real-time data from the COSMIC mission - usually available within a few hours
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD rowspan="2">
+<BR><a class="nav" href="javascript:newWindow('/cdaac/missions.html#sacc')">SACC</a>
+</TD>
+<TD>
+<a class="nav" href="#sacc">SACC</a>: Post Processed data from the Argentinian SAC-C satellite
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<a class="nav" href="#saccrt">SACCRT</a>: Real-time data from the Argentinian SAC-C satellite
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD rowspan="2">
+<BR><a class="nav" href="javascript:newWindow('/cdaac/missions.html#cnofs')">C/NOFS</a>
+</TD>
+<TD>
+<a class="nav" href="#cnofs">CNOFS</a>: Post Processed data from the US Air Force C/NOFS satellite
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<a class="nav" href="#cnofsrt">CNOFSRT</a>: Real-time data from C/NOFS
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<BR><a class="nav" href="javascript:newWindow('/cdaac/missions.html#kompsat5')">KOMPSAT5</a>
+</TD>
+<TD>
+<a class="nav" href="#kompsat5rt">KOMPSAT5RT</a>: Real-time data from the KOMPSAT-5 (Korea Multi-Purpose Satellite-5)
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<BR><a class="nav" href="javascript:newWindow('/cdaac/missions.html#gpsmet')">GPSMETAS</a>
+</TD>
+<TD>
+<a class="nav" href="#gpsmetas">GPSMETAS</a>: Post Process data from the proof-of-concept GPS/MET experiment - Lower quality data with GPS Anti-Spoofing enabled.
+</TD>
+</TR>
+
+
+
+<TR class="decor-line">
+<TD>
+<BR><a class="nav" href="javascript:newWindow('/cdaac/missions.html#gpsmet')">GPSMET</a>
+</TD>
+<TD>
+<a class="nav" href="#gpsmet">GPSMET</a>: Post Process data from the proof-of-concept GPS/MET experiment
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<BR><a class="nav" href="javascript:newWindow('/cdaac/missions.html#gpsmet')">GPSMETAS</a>
+</TD>
+<TD>
+<a class="nav" href="#gpsmetas">GPSMETAS</a>: Post Process data from the proof-of-concept GPS/MET experiment - Lower quality data with GPS Anti-Spoofing enabled. 
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<BR><a class="nav" href="javascript:newWindow('/cdaac/missions.html#grace')">GRACE</a>
+</TD>
+<TD>
+<a class="nav" href="#grace">GRACE</a>: Post Process data from the GRACE (Gravity Recovery and Climate Experiment) mission.  
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<BR><a class="nav" href="javascript:newWindow('/cdaac/missions.html#tsx')">TerraSar-X</a>
+</TD>
+<TD>
+<a class="nav" href="#tsx">TerraSAR-X</a>: Post Process data from the German TerraSAR-X mission.  
+<BR>The TSX mission has been brought up to 2015.02 for post-processing.    From 2012.001 onwards the results are with the CDAAC4.2  (BERN52 to us)  software version.   Original 2012 results have been replaced although this is not a climate reprocessing and TSX from 2008-2011 December are processed with the CDAAC software that was in place during those years.
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD rowspan="2">
+<BR><a class="nav" href="javascript:newWindow('/cdaac/missions.html#metopa')">MetOp-A</a>
+</TD>
+<TD>
+<a class="nav" href="#metopa">MetOp-A</a>: <b>metopa</b> mission.  Post Processed data from the MetOp-A satellite.  Varying software, processed month-to-month
+starting in Jan 2012.
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<a class="nav" href="#metopa2016">MetOp-A</a>: <b>metopa2016</b> mission.  Climate reprocessing of Metop-A data from 2007.274 to 2007.304, 2008.061 to 2015.365.  Consistent software and parameters used.
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD rowspan="2">
+<BR><a class="nav" href="">MetOp-B</a>
+</TD>
+<TD>
+<a class="nav" href="#metopb">MetOp-B</a>: <b>metopb</b> mission.  Post Processed data from the MetOp-B satellite.  
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<a class="nav" href="#metopb2016">MetOp-B</a>: <b>metopb2016</b> mission.  Climate reprocessing of Metop-A data for 2013-2015  Consistent software and parameters used.
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<BR><a class="nav" href="javascript:newWindow('/cdaac/missions.html#champ')">CHAMP</a>
+</TD>
+<TD>
+<a class="nav" href="#champ2016">CHAMP</a>: <b>champ2016</b> mission.  Climate reprocessing of CHAMP data from 2001.139 to 2008.279.  Consistent software and parameters used.
+</TD>
+
+</TR>
+<TR class="decor-line">
+<TD rowspan="2">
+<BR><a class="nav" href="javascript:newWindow('http://cosmic-io.cosmic.ucar.edu/cdaac/cgi_bin/fileFormats.cgi?type=bitArc')">GPS data bits</a>
+</TD>
+<TD>
+<a class="nav" href="#fid">Post Processed GPS data bits hourly archive files. </a>
+</TD>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<a class="nav" href="#fidrt">Real-Time GPS data bits hourly archive files. </a>
+</TD>
+</TR>
+
+
+
+</TABLE>
+</CENTER>
+<P><P>
+<BR><BR>
+<HR>
+<B>LDM Distribution</B>
+<P>
+We now have the capability to distribute our data via LDM -- Local Data
+Manager -- an event-driven data distribution system. Web Link: <a href="http://www.unidata.ucar.edu/software/ldm/" target="new">http://www.unidata.ucar.edu/software/ldm/</a>
+<BR>
+Please contact the COSMIC Systems Administration Team at: cosmic-sys[at]ucar[dot]edu if you are interested
+in receiving our data sets via LDM.  
+<P>We are currently providing 'ionPrf', 'atmPrf', 'wetPrf' and 'bfrPrf' files via LDM. If resources become available and sufficient interest is noted for additional files we will expand the list. Please contact the COSMIC Systems Administration Team at: cosmic-sys[at]ucar[dot]edu to let us know what file types you would like. 
+
+<P>
+Posted by the CDAAC Team.
+<BR><P>
+<HR>
+
+<B>Hints for using curl for fetching files:</B>
+
+<P>The CDAAC team has introduced a new way of fetching data via the web using a REST (REpresentational State Transfer) architecture.
+<BR>With this interface you can fetch a daily tarball of data for a specified mission, file type and day.
+
+<UL>
+          <LI>curl -s -f -u username:userpasswd
+              <BR>http://cdaac-www.cosmic.ucar.edu/cdaac/rest/tarservice/data/mission/filetype/YYYY.DDD
+              <BR>Where:
+              <BR>- mission is the CDAAC mission name i.e. cosmic
+              <BR>- filetype is the file type i.e. wetPrf
+              <BR>- YYYY.DDD is the day of year i.e: 2012.305
+              <BR> 
+              <BR>i.e:</LI>
+          <LI>curl -s -f -u username:userpasswd  http://cdaac-www.cosmic.ucar.edu/cdaac/rest/tarservice/data/cosmic/wetPrf/2016.100 -o cosmic_wetPrf_2016.100.tar </LI>
+          <BR>
+          <LI>curl -s -f -u username:userpasswd  http://cdaac-www.cosmic.ucar.edu/cdaac/rest/tarservice/data/cosmic2013/amtPrf/2013.100 -o cosmic2013_atmPrf_2013.100.tar </LI>
+
+</UL>
+          <P>Pleaes Note:  The above command has replaced the previous individual file wget for missions: GRACE, Metop-A, Metop-B, Metopa-2016, CHAMP, SACC and CNOFS.  There is no automated date range option.  The user must write some kind of script or use something like linux command line:
+ <LI>for `seq in 100 199`; do curl -s -f -u user:pass   http://cdaac-www.cosmic.ucar.edu/cdaac/rest/tarservice/data/cosmic/wetPrf/2016. -o cosmic_wetPrf_2016. ; done 
+</LI>
+<BR><BR>
+
+<HR>
+<B>Readers</B>
+
+<P><B>BURF File Reader:</b>
+<BR>
+Perl Reader for our BUFR files, packaged for easy installation: <a href="doc/documents/RObufr-0.02.tar.gz">RObufr-0.02.tar.gz</a>
+
+<P><b>NetCDF Readers:</b>
+<BR>
+Users are welcome to go to: <a href="https://www.unidata.ucar.edu/software/netcdf/">https://www.unidata.ucar.edu/software/netcdf/</a> and install the netCDF library on their machine. In addition to this library, there are  netcdf interfaces available for many programming languages and products, some of which are listed at: <a href="https://www.unidata.ucar.edu/software/netcdf/software.html">https://www.unidata.ucar.edu/software/netcdf/software.html</a>
+<BR><BR>
+
+
+
+
+<HR>
+<a name="cosmic2013"></a>
+
+<BR>
+<center>
+<P class=title><font color=black>COSMIC 2013  Re-Processed Data Products</font> 
+</center>
+
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>COSMIC 2013 Re-Processed Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<BR>The current products have the following versions in their file names:
+</TR>
+</TABLE>
+
+<BR>
+<P><font face="Arial, Helvetica" color="blue"><B>COSMIC 2013 Re-Processed Data Products</b></font>
+
+<UL>
+<LI>Raw GPS Data  
+   <UL>
+
+   <LI><b>opnGps:</b> Atmospheric occultation data in a simple custom binary format. This data file contains all high rate atmospheric data sent us by the GNSS receiver on the LEO.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=opnGps">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>podCrx:</b> Raw L1 and L2 pseudo-range and carrier phase tracking data in compressed RINEX 2.20 format
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podCrx">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+
+</UL>
+<LI>Orbit Determination
+<UL>
+
+    <LI><b>leoOrb:</b> Precise COSMIC spacecraft orbits. The orbit precision based on internal orbit overlap comparisons is on average less than 15 cm 3D RMS (0.15 mm/sec 3D velocity).
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>leoClk:</b>Clock offset values for each LEO satellite during the period specified in the file name.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>leoAtt:</b> Attitude and rough position data from the COSMIC spacecraft andthe GOX navigation solutions.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoAtt">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>comClk:</b>This file contains clock offset values for each GPS satellite during the period specified in the file name.  These data are in Bernese 'CLK' ASCII format.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=comClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+</UL>
+
+<LI>Atmospheric Profiles
+<UL>
+    <LI><b>atmPhs:</b> Atmospheric excess phases and auxiliary data used for generating atmospheric profiles. Removal of clock errors is based on single differencing.  The velocity precision of the atmPhs files is estimated to be less than 0.15 mm/sec RMS.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>gpsBit:</b> GPS navigation data modulation bits used for processing open loop data in the lower troposphere.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gpsBit">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b> Atmospheric profiles of bending angle, refractivity, and dry temperature.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b> Atmospheric profiles of refractivity, temperature and water vapor. These profiles are based on 1D variational analysis using ECMWF low resolution analysis data (found in the ecmPrf files).
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+    <LI><b>bfrPrf:</b> Contains results in BUFR format from both atmPrf and wetPrf. The refractivity profile in bfrPrf is equivalent to the one in the corresponding atmPrf file, but may differ from the one in wetPrf.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+    <LI><b>sonPrf:</b> Radio sonde comparison profiles.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sonPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>ecmPrf:</b>Temperature, pressure and moisture profiles generated from the ECMWF gridded analysis and colocated with occultation profiles.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ecmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+   <LI><b>echPrf:</b> Temperature, pressure and moisture profiles 
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=echPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>eraPrf:</b> ERA-40 Interim reanalysis - Temperature, pressure and moisture profiles generated from the ERA interim model.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=eraPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>gfsPrf:</b> Vertical profile through gridded NCEP operational analysis NetCDF files.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gfsPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>mmcGrd:</b>Grid of averaged radio occultation data, an <b>MMC</b> grid, where MMC means Monthly Mean Climatology.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=mmcGrd">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+
+</UL>
+<LI>Total Electron Content and Ionospheric profiles
+    <UL>
+    <LI><b>podTec:</b> Absolute total electron content from the POD antennas (including ionospheric occultations). The accuracy is believed to be within 1-3 TECU, but has not been verified. Note: Data arcs from some antennas may be un-calibrated for the receiver differential code bias.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podTec">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>    
+    <BR><BR>
+
+    <LI><b>ionPhs:</b> Ionospheric excess phases and auxiliary data used for generating ionospheric profiles. Note: No differencing is applied - expect receiver clock errors on L1 and L2.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ionPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>    
+    <BR><BR>
+
+    <LI><b>ionPrf:</b> Ionospheric profiles of electron density. The accuracy is genereally about 10<sup>4</sup>-10<sup>5</sup> cm<sup>-3</sup>. Caveats: Some profiles may be affected by cycle-slips.
+     <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ionPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>    
+     <BR><BR> 
+     </UL>
+
+<LI>Tiny Iononospheric Photometer
+    <UL>
+
+    <LI><b>tipLv1:</b>Geo-located measurements from the Tiny Iononospheric Photometer. Each file contains data from one dump. 
+     <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=tipLv1">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+     <BR><BR>
+   </UL>
+
+
+<LI>Scintillations
+    <UL>
+
+    <LI><b>scnLv1:</b>Derived S4 scintillation index provided every second.
+     Caveats: Intermittent anomalies in the CA SNRs from some
+     antennas may result in false S4 index values.
+     <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=scnLv1">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+     <BR><BR>
+    </UL>
+
+
+
+</UL>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<HR>
+<a name="cosmic"></a>
+
+<BR>
+<center>
+<P class=title><font color=black>COSMIC Post Processed Data Products</font> 
+</center>
+
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>COSMIC Post Processed Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<BR>The current products have the following versions in their file names:
+<BR>2009.2650 -- All file types up to atmObj, including leoOrb, comClk, occTab
+<BR>2010.2640 -- All file types starting with atmPhs, including atmPrf, wetPrf
+<P>
+There are two different version types due to the fact that a fix was
+made to atmPhs processing late in the reprocessing.
+
+<br><br>
+<hr>
+<!--<BR>Formosat-3/COSMIC Post Processed data are now available for the time period of: 2006.111 - 2010.243. -->
+
+
+<BR><BR>While data are posted starting on day 2006.111 we strongly recommend that users focus their efforts on data collected with receiver firmware version 4.2.1 and later, starting on day 194, 2006.  Because of many different issues with earlier data before day 194 CDAAC cannot support related questions/problems.
+
+<BR><BR>Presently we provide around 1800 neutral atmospheric profiles per day. This is lower than the planned 2500 daily profiles. The main reasons for the lower number are:
+<UL>
+ <LI> (a) Some satellites are still not in their final orbit and we sometimes download data only every 5 hours. To avoid receiver memory overflow some data are
+dumped to the air (not to a ground station).
+ <LI> (b) During orbit raising, precise orbit determination (POD) is not possible and occultations can not be processed.
+ <LI> (c) L2 phase residual dynamic range issue (expected to be solved soon).
+ <LI> (d) Data gaps in high-rate data.
+</UL>
+ <BR><BR>We still plan to meet the 2500 sounding/day goal once the satellites gets closer to their final configuration, and remaining data quality issues are resolved.
+
+<BR><BR>
+Chris Rocken and the CDAAC Team
+<BR>
+
+</TD>
+</TR>
+</TABLE>
+
+<BR>
+<P><font face="Arial, Helvetica" color="blue"><B>COSMIC Post Processed Data Products</b></font>
+
+<UL>
+<LI>Raw GPS Data  
+   <UL>
+
+   <LI><b>opnGps:</b> Atmospheric occultation data in a simple custom binary format. This data file contains all high rate atmospheric data sent us by the GNSS receiver on the LEO.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=opnGps">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>podCrx:</b> Raw L1 and L2 pseudo-range and carrier phase tracking data in compressed RINEX 2.20 format
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podCrx">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+
+</UL>
+<LI>Orbit Determination
+<UL>
+
+    <LI><b>leoOrb:</b> Precise COSMIC spacecraft orbits. The orbit precision based on internal orbit overlap comparisons is on average less than 15 cm 3D RMS (0.15 mm/sec 3D velocity).
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>leoClk:</b>Clock offset values for each LEO satellite during the period specified in the file name.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>leoAtt:</b> Attitude and rough position data from the COSMIC spacecraft andthe GOX navigation solutions.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoAtt">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>comClk:</b>This file contains clock offset values for each GPS satellite during the period specified in the file name.  These data are in Bernese 'CLK' ASCII format.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=comClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+</UL>
+
+<LI>Atmospheric Profiles
+<UL>
+    <LI><b>atmPhs:</b> Atmospheric excess phases and auxiliary data used for generating atmospheric profiles. Removal of clock errors is based on single differencing.  The velocity precision of the atmPhs files is estimated to be less than 0.15 mm/sec RMS.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>gpsBit:</b> GPS navigation data modulation bits used for processing open loop data in the lower troposphere.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gpsBit">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b> Atmospheric profiles of bending angle, refractivity, and dry temperature.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b> Atmospheric profiles of refractivity, temperature and water vapor. These profiles are based on 1D variational analysis using ECMWF low resolution analysis data (found in the ecmPrf files).
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+    <LI><b>bfrPrf:</b> Contains results in BUFR format from both atmPrf and wetPrf. The refractivity profile in bfrPrf is equivalent to the one in the corresponding atmPrf file, but may differ from the one in wetPrf.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+    <LI><b>sonPrf:</b> Radio sonde comparison profiles.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sonPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>ecmPrf:</b>Temperature, pressure and moisture profiles generated from the ECMWF gridded analysis and colocated with occultation profiles.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ecmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+   <LI><b>echPrf:</b> Temperature, pressure and moisture profiles 
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=echPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>eraPrf:</b> ERA-40 Interim reanalysis - Temperature, pressure and moisture profiles generated from the ERA interim model.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=eraPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>gfsPrf:</b> Vertical profile through gridded NCEP operational analysis NetCDF files.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gfsPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>mmcGrd:</b>Grid of averaged radio occultation data, an <b>MMC</b> grid, where MMC means Monthly Mean Climatology.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=mmcGrd">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+
+</UL>
+<LI>Total Electron Content and Ionospheric profiles
+    <UL>
+    <LI><b>podTec:</b> Absolute total electron content from the POD antennas (including ionospheric occultations). The accuracy is believed to be within 1-3 TECU, but has not been verified. Note: Data arcs from some antennas may be un-calibrated for the receiver differential code bias.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podTec">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>    
+    <BR><BR>
+
+    <LI><b>ionPhs:</b> Ionospheric excess phases and auxiliary data used for generating ionospheric profiles. Note: No differencing is applied - expect receiver clock errors on L1 and L2.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ionPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>    
+    <BR><BR>
+
+    <LI><b>ionPrf:</b> Ionospheric profiles of electron density. The accuracy is genereally about 10<sup>4</sup>-10<sup>5</sup> cm<sup>-3</sup>. Caveats: Some profiles may be affected by cycle-slips.
+     <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ionPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>    
+     <BR><BR> 
+     </UL>
+
+<LI>Tiny Iononospheric Photometer
+    <UL>
+
+    <LI><b>tipLv1:</b>Geo-located measurements from the Tiny Iononospheric Photometer. Each file contains data from one dump. 
+     <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=tipLv1">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+     <BR><BR>
+   </UL>
+
+
+<LI>Scintillations
+    <UL>
+
+    <LI><b>scnLv1:</b>Derived S4 scintillation index provided every second.
+     Caveats: Intermittent anomalies in the CA SNRs from some
+     antennas may result in false S4 index values.
+     <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=scnLv1">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+     <BR><BR>
+    </UL>
+
+
+
+</UL>
+
+<HR><a name="cosmicrt"></a>
+<BR>
+<center>
+<P class=title><font color=black>COSMICRT Data Products</font> 
+</center>
+
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>COSMICRT Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<P>COSMIC Real Time data.
+
+<BR><BR>COSMICRT data are available from the day after COSMIC PP data availability to yesterday. 
+
+<BR><BR>Presently we provide around 1300 neutral atmospheric profiles per day. 
+
+</TD>
+</TR>
+</TABLE>
+
+
+<BR>
+<P><font face="Arial, Helvetica" color="blue"><B>COSMIC Real Time data and derived products</b></font>
+
+<UL>
+<LI>Raw GPS Data  
+   <UL>
+   <LI><b>opnGps:</b> Atmospheric occultation data in a simple custom binary format. This data file contains all high rate atmospheric data sent us by the GNSS receiver on the LEO.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=opnGps">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>goxBin:</b>Raw binary data from the GOX/IGOR GPS occultation receiver.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=goxBin">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+</UL>
+<LI>Orbit Determination
+<UL>
+    
+    <LI><b>occTab:</b> Atmospheric and ionospheric occultation table. Contains information about which occultations exist in a given download (one dump of data for one LEO) and where and when they occured.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=occTab">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>leoOrb:</b> Precise COSMIC spacecraft orbits. The orbit precision based on internal orbit overlap comparisons is on average less than 15 cm 3D RMS (0.15 mm/sec 3D velocity).
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>leoClk:</b>Clock offset values for each LEO satellite during the period specified in the file name.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR> 
+
+    <LI><b>leoAtt:</b> Attitude and rough position data from the COSMIC spacecraft andthe GOX navigation solutions.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoAtt">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+   <LI><b>leoPVT:</b>The same navigation data from the GOX that is contained in the
+leoAtt files, but packaged in a format usable by NSPO satellite operations.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoPVT">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+</UL>
+
+<LI>Atmospheric Profiles
+<UL>
+    <LI><b>atmPhs:</b> Atmospheric excess phases and auxiliary data used for generating atmospheric profiles. Removal of clock errors is based on single differencing.  The velocity precision of the atmPhs files is estimated to be less than 0.15 mm/sec RMS.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>gpsBit:</b> GPS navigation data modulation bits used for processing open loop data in the lower troposphere.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gpsBit">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b> Atmospheric profiles of bending angle, refractivity, and dry temperature.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b> Atmospheric profiles of refractivity, temperature and water vapor. These profiles are based on 1D variational analysis using GFS 47 level 12 hour forecast data (found in the avnPrf files).
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>bfrPrf:</b> Contains results in BUFR format from both atmPrf and wetPrf. The refractivity profile in bfrPrf is equivalent to the one in the corresponding atmPrf file, but may differ from the one in wetPrf.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>avnPrf:</b>Temperature, pressure and moisture profiles generated from the NCEP GFS 12 hour forcast files and colocated with occultation profiles. These profiles are used by the real time CDAAC process as a first guess for determining moisture below 10km and for comparison purposes.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=avnPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+
+</UL>
+
+<LI>Total Electron Content and Ionospheric profiles
+    <UL>
+    <LI><b>podTec:</b> Absolute total electron content from the POD antennas (including ionospheric occultations). The accuracy is believed to be within 1-3 TECU, but has not been verified. Note: Data arcs from some antennas may be un-calibrated for the receiver differential code bias.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podTec">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>    
+    <BR><BR>
+
+    <LI><b>ionPhs:</b> Ionospheric excess phases and auxiliary data used for generating ionospheric profiles. Note: No differencing is applied - expect receiver clock errors on L1 and L2.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ionPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>    
+    <BR><BR>
+
+    <LI><b>ionPrf:</b> Ionospheric profiles of electron density. The accuracy is genereally about 10<sup>4</sup>-10<sup>5</sup> cm<sup>-3</sup>. Caveats: Some profiles may be affected by cycle-slips.
+     <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ionPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>    
+     <BR><BR>
+</UL>
+
+ <LI>Scintillations    
+    <UL>
+
+    <LI><b>scnLv1:</b>Derived S4 scintillation index provided every second.
+     Caveats: Intermittent anomalies in the CA SNRs from some
+     antennas may result in false S4 index values.
+     <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=scnLv1">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>    
+     <BR><BR>
+</UL>
+
+</UL>
+
+
+<HR><a name="saccrt"></a>
+<BR>
+<center>
+<P class=title><font color=black>SACCRT Data Products</font> 
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>SACCRT Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+
+<P>SACC Real Time data.
+<BR><P>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<BR>
+<P><font face="Arial, Helvetica" color="blue"><B>SACCRT data and derived products</b></font>
+
+<UL>
+<LI>Raw GPS Data  
+   <UL>
+   <LI><b>sacLv0:</b> This file contains level 0 (raw binary) data from the SAC-C satellite.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sacLv0">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/login/saccrt/level0/sacLv0/">Data Access</a> 
+   <BR><BR>
+
+   <LI><b>leoTLE:</b> Two line elements files for the CHAMP spacecraft orbits.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoTLE">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/login/saccrt/level0/leoTLE/">Data Access</a>
+   <BR><BR>
+
+   <LI><b>podGps:</b> Raw L1 and L2 pseudo-range and carrier phase tracking data in BINEX 0x7f-00 format.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podGps">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/login/saccrt/level1a/podGps/">Data Access</a>
+   <BR><BR>
+
+   <LI><b>opnGps:</b> Atmospheric occultation data in a simple custom binary format.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=opnGps">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+   <a class="nav" href="/cdaac/login/saccrt/level1a/opnGps/">Data Access</a>
+   <BR><BR>
+ 
+   <LI><b>podObs:</b> Low rate GPS data (1 sec for COSMIC; 10 sec for CHAMP) in RINEX 2.20 format.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podObs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+   <a class="nav" href="/cdaac/login/saccrt/level1a/podObs/">Data Access</a>
+   <BR><BR>
+
+   </UL>
+<LI>Orbit Determination
+    <UL>
+    <LI><b>leoOrb:</b> LEO orbit specification file. Contains LEO orbit info for the period of the download (for real time files) or for one day (for post-processed files). Specified in SP3 format
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/login/saccrt/level1b/leoOrb/">Data Access</a>
+    <BR><BR>
+
+    </UL>
+<LI>Atmospheric Profiles
+    <UL>
+
+    <LI><b>atmPhs:</b> Atmospheric excess phase file. This file is analogous to the GPS/MET 'occ' level 2 files, but it is in NetCDF format instead of tab-delimited ASCII.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/login/saccrt/level1b/atmPhs/">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b> An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/login/saccrt/level2/atmPrf/">Data Access</a>
+    <BR><BR>
+
+    <LI><b>avnPrf:</b> Temperature, pressure and moisture profiles generated from the NCEP AVN 12 hour forcast files and colocated with occultation profiles.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=avnPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+    <a class="nav" href="/cdaac/login/saccrt/level2/avnPrf/">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b> An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/login/saccrt/level2/wetPrf/">Data Access</a>
+    <BR><BR>
+
+    <LI><b>bfrPrf:</b> A low resolution (adjustable, currently 200 meter) atmospheric profile in the BUFR format useful to weather modelers.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/login/saccrt/level2/bfrPrf/">Data Access</a>
+    <BR><BR>
+    </UL>
+</UL>
+
+
+<hr><a name="sacc"></a>
+
+<BR>
+<center>
+<P class=title><font color=black>SACC data and derived products</font>
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>SACC Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<P>SACC Post Processed data.
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+ <UL>
+  <LI>Raw GPS Data  
+   <UL>
+   <LI><b>sacLv0:</b>This file contains level 0 (raw binary) data from the SAC-C satellite. 
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sacLv0">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+   <BR><BR>
+
+
+   <LI><b>podObs:</b> Raw L1 and L2 pseudo-range and carrier phase tracking data in RINEX 2.20 format
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podObs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+   </UL>
+
+  <LI>Orbit Determination
+    <UL>
+    <LI><b>leoOrb:</b>LEO orbit specification file. Contains LEO orbit info for the period of the download (for real time files) or for one day (for post-processed files). Specified in SP3 format
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>leoClk:</b>Clock offset values for each LEO satellite during the period specified in the file name.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    </UL>
+
+  <LI>Atmospheric Profiles
+    <UL>
+    <LI><b>atmPhs:</b>Atmospheric excess phase file. This file is analogous to the GPS/MET 'occ' level 2 files, but it is in NetCDF format instead of tab-delimited ASCII.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b>An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b>An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR> 
+
+    <LI><b>bfrPrf:</b>A low resolution (adjustable, currently 200 meter) atmospheric profile in the BUFR format useful to weather modelers.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>sonPrf:</b>Temperature, pressure and moisture profiles generated from radio sonde data from NCAR mass store
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sonPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>ecmPrf:</b>Temperature, pressure and moisture profiles generated from the ECMWF gridded analysis and colocated with occultation profiles.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ecmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>eraPrf:</b> ERA-40 Interim reanalysis - Temperature, pressure and moisture profiles generated from the ERA interim model.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=eraPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+   
+    <LI><b>gfsPrf:</b> Vertical profile through gridded NCEP operational analysis NetCDF files.   
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gfsPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    </UL>
+
+    <LI>Total Electron Content and Ionospheric profiles
+    <UL>
+    <LI><b>podTec:</b> Absolute total electron content from the POD antennas (including ionospheric occultations). The accuracy is believed to be within 1-3 TECU, but has not been verified. Note: Data arcs from some antennas may be un-calibrated for the receiver differential code bias.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podTec">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+</UL>
+
+
+</UL>
+
+
+<HR><a name="cnofs"></a>
+<BR>
+<center>
+<P class=title><font color=black>CNOFS Data Products</font> 
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>CNOFS Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+
+<P>C/NOFS Post-Processed data
+<BR>
+<BR><P>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<BR>
+<P><font face="Arial, Helvetica" color="blue"><B>CNOFS data and derived products</b></font>
+
+<UL>
+  <LI>Raw GPS Data  
+   <UL>
+   <LI><b>cnfLv0:</b>This file contains level 0 (raw binary) data from the CORISS instrument on the C/NOFS satellite. 
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=cnfLv0">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+   <BR><BR>
+
+   <LI><b>podCrx:</b> Raw L1 and L2 pseudo-range and carrier phase tracking data in compressed RINEX 2.20 format
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podCrx">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+   </UL>
+
+  <LI>Orbit Determination
+    <UL>
+    <LI><b>leoOrb:</b>LEO orbit specification file. Contains LEO orbit info for one day. Specified in SP3 format
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>leoClk:</b>Clock offset values for each LEO satellite during the period specified in the file name.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+    </UL>
+
+
+  <LI>Atmospheric Profiles
+    <UL>
+    <LI><b>atmPhs:</b>Atmospheric excess phase file. 
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b> An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>eraPrf:</b> Temperature, pressure and moisture profiles generated from the ERA 40 interrim reanalysis and colocated with occultation profiles.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=eraPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b> An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>bfrPrf:</b> A low resolution (adjustable, currently 200 meter) atmospheric profile in the BUFR format useful to weather modelers.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+    </UL>
+</UL>
+
+<HR><a name="cnofsrt"></a>
+<BR>
+<center>
+<P class=title><font color=black>CNOFSRT Data Products</font> 
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>CNOFSRT Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+
+<P>C/NOFS Real Time data.
+<BR>
+<BR><P>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<BR>
+<P><font face="Arial, Helvetica" color="blue"><B>CNOFSRT data and derived products</b></font>
+
+<UL>
+<LI>Atmospheric Profiles
+    <UL>
+
+    <LI><b>atmPrf:</b> An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/login/cnofsrt/level2/atmPrf/">Data Access</a>
+    <BR><BR>
+
+    <LI><b>avnPrf:</b> Temperature, pressure and moisture profiles generated from the NCEP AVN 12 hour forcast files and colocated with occultation profiles.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=avnPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+    <a class="nav" href="/cdaac/login/cnofsrt/level2/avnPrf/">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b> An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/login/cnofsrt/level2/wetPrf/">Data Access</a>
+    <BR><BR>
+
+    <LI><b>bfrPrf:</b> A low resolution (adjustable, currently 200 meter) atmospheric profile in the BUFR format useful to weather modelers.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/login/cnofsrt/level2/bfrPrf/">Data Access</a>
+    <BR><BR>
+    </UL>
+</UL>
+
+<hr><a name="gpsmet"></a>
+
+<BR>
+<center>
+<P class=title><font color=black>GPSMET data and derived products</font>
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>GPSMET Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<P>Data available for the time period of: 1995.100-128; 1995.170-305 and 1997.033-054 
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<UL>
+<LI>Raw GPS Data  
+   <UL>
+
+   <LI><b>gpmSci:</b>Turbo Binary data from the GPS/MET instrument.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gpmSci">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+   <BR><BR>
+
+
+   <LI><b>ionGps:</b>One second ionospheric occultation data in BINEX 0x7f format.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ionGps">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+   <BR><BR>
+
+   </UL>
+<LI>Level 1b data products
+    <UL>
+
+    <LI><b>comClk:</b>This file contains clock offset values for each GPS satellite during the period specified in the file name.  These data are in Bernese 'CLK' ASCII format.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=comClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+    <BR><BR>
+
+
+    <LI><b>leoOrb:</b>LEO orbit specification file in SP3 format. Contains LEO orbit info for one day.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    </UL>
+<LI>Atmospheric Profiles
+    <UL>
+    <LI><b>atmPhs:</b>Atmospheric excess phase file in netCDF format.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b>An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b>An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR> 
+
+    <LI><b>sonPrf:</b>Temperature, pressure and moisture profiles generated from radio sonde data from NCAR mass store
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sonPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>ncpPrf:</b>Temperature, pressure and moisture profiles generated from the NCAR/NCEP reanalysis and colocated with occultation profiles.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ncpPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>ecmPrf:</b>Temperature, pressure and moisture profiles generated from the ECMWF gridded analysis and colocated with occultation profiles.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ecmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+    </UL>
+    </UL>
+
+
+
+<hr><a name="kompsat5rt"></a>
+
+<BR>
+<center>
+<P class=title><font color=black>KOMPSAT5 data and derived products</font>
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>KOMPSAT5 Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<P>KOMPSAT5 Near Real-Time Data 
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<UL>
+<LI>Raw GPS Data
+   <UL>
+   <LI><b>km5Lv0:</b>Raw binary data from the KOMPSAT5 satellite.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=km5Lv0">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>podCrx:</b> Raw L1 and L2 pseudo-range and carrier phase tracking data in compressed RINEX 2.20 format
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podCrx">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>opnGps:</b> Atmospheric occultation data in a simple custom binary format. This data file contains all high rate atmospheric data sent us by the GNSS receiver on the LEO.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=opnGps">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+    </UL>
+
+<LI>Orbit Determination
+    <UL>
+
+    <LI><b>leoOrb:</b> Precise COSMIC spacecraft orbits. The orbit precision based on internal orbit overlap comparisons is on average less than 15 cm 3D RMS (0.15 mm/sec 3D velocity).
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+    </UL>
+
+<LI>Atmospheric Profiles
+    <UL>
+    <LI><b>atmPhs:</b>Atmospheric excess phase file in netCDF format.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>gpsBit:</b> GPS navigation data modulation bits used for processing open loop data in the lower troposphere.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gpsBit">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+    <LI><b>atmPrf:</b>An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>avnPrf:</b>Temperature, pressure and moisture profiles generated from the NCEP GFS 12 hour forcast files and colocated with occultation profiles. These profiles are used by the real time CDAAC process as a first guess for determining moisture below 10km and for comparison purposes.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=avnPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+
+    <LI><b>wetPrf:</b>An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+    <LI><b>bfrPrf:</b>A low resolution (adjustable, currently 200 meter) atmospheric profile in the BUFR format useful to weather modelers.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+    </UL>
+</UL>
+
+
+<hr><a name="gpsmetas"></a>
+
+<BR>
+<center>
+<P class=title><font color=black>GPSMETAS data and derived products</font>
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>GPSMETAS Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<P>Data available for the time period of: 1995.224-242; 1995.328-349; 1996.022-042; 1996.076-097; 1996.128-148; 1996.186-207; 1996.237-258; 1996.293-312; and 1996.350-1997.009
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+
+
+<UL>
+<LI>Raw GPS Data  
+   <UL>
+   <LI><b>gpmSci:</b>Turbo Binary data from the GPS/MET instrument.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gpmSci">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+   <BR><BR>
+
+   <LI><b>igsPol:</b>Earth orientation file from the IGS.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=igsPol">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+   <BR><BR>
+
+   <LI><b>ionGps:</b>One second ionospheric occultation data in BINEX 0x7f format.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ionGps">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+   <BR><BR>
+
+   </UL>
+<LI>Level 1b data products
+    <UL>
+
+    <LI><b>comClk:</b>This file contains clock offset values for each GPS satellite during the period specified in the file name.  These data are in Bernese 'CLK' ASCII format.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=comClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+    <BR><BR>
+
+
+    <LI><b>leoOrb:</b>LEO orbit specification file in SP3 format. Contains LEO orbit info for one day.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+    </UL>
+<LI>Atmospheric Profiles
+    <UL>
+    <LI><b>atmPhs:</b>Atmospheric excess phase file in netCDF format.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b>An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b>An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR> 
+
+    <LI><b>sonPrf:</b>Temperature, pressure and moisture profiles generated from radio sonde data from NCAR mass store
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sonPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>ncpPrf:</b>Temperature, pressure and moisture profiles generated from the NCAR/NCEP reanalysis and colocated with occultation profiles.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ncpPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>ecmPrf:</b>Temperature, pressure and moisture profiles generated from the ECMWF gridded analysis and colocated with occultation profiles.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ecmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+    </UL>
+    </UL>
+
+
+<hr><a name="grace"></a>
+
+<BR>
+<center>
+<P class=title><font color=black>GRACE data and derived products</font>
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>GRACE Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<P>GRACE Post Processed data.
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+<UL>
+
+
+<LI>Raw GPS Data  
+   <UL>
+   <LI><b>grcLv0:</b>Raw binary data from the GRACE satellite.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=grcLv0">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+   <BR><BR>
+
+   <LI><b>podObs:</b> Raw L1 and L2 pseudo-range and carrier phase tracking data in RINEX 2.20 format
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podObs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+   </UL>
+
+<LI>Orbit Determination
+    <UL>
+    <LI><b>leoOrb:</b>LEO orbit specification file. Contains LEO orbit info for the period of the download (for real time files) or for one day (for post-processed files). Specified in SP3 format
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+     <LI><b>leoClk:</b>Clock offset values for each LEO satellite during the period specified in the file name.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+    </UL>
+<LI>Atmospheric Profiles
+    <UL>
+    <LI><b>atmPhs:</b>Atmospheric excess phase file. This file is analogous to the GPS/MET 'occ' level 2 files, but it is in NetCDF format instead of tab-delimited ASCII.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b>An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b>An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR> 
+
+    <LI><b>bfrPrf:</b>A low resolution (adjustable, currently 200 meter) atmospheric profile in the BUFR format useful to weather modelers.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>sonPrf:</b>Temperature, pressure and moisture profiles generated from radio sonde data from NCAR mass store
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sonPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>ecmPrf:</b>Temperature, pressure and moisture profiles generated from the ECMWF gridded analysis and colocated with occultation profiles.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ecmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>eraPrf:</b> ERA-40 Interim reanalysis - Temperature, pressure and moisture profiles generated from the ERA interim model.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=eraPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>gfsPrf:</b> Vertical profile through gridded NCEP operational analysis NetCDF files.       <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gfsPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+    </UL>
+
+
+    <LI>Total Electron Content and Ionospheric profiles
+    <UL>
+    <LI><b>podTec:</b> Absolute total electron content from the POD antennas (including ionospheric occultations). The accuracy is believed to be within 1-3 TECU, but has not been verified. Note: Data arcs from some antennas may be un-calibrated for the receiver differential code bias.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podTec">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+     <LI><b>ionPhs:</b>Ionospheric excess phases and auxiliary data used for generating ionospheric profiles. Note: No differencing is applied - expect receiver clock errors on L1 and L2.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ionPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>ionPrf:</b>Ionospheric profiles of electron density. The accuracy is genereally about 10<sup>4</sup>-10<sup>5</sup> cm<sup>-3</sup>. Caveats: Some profiles may be affected by cycle-slips.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ionPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+    </UL>
+
+    </UL>
+
+
+
+<hr><a name="tsx"></a>
+
+<BR>
+<center>
+<P class=title><font color=black>TerraSAR-X data and derived products</font>
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>TerraSAR-X Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<P>TSX Post Processed data.
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+
+
+<UL>
+<LI>Raw GPS Data  
+   <UL>
+   <LI><b>tsxLv0:</b>Raw binary data from the TerraSAR-X satellite.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=tsxLv0">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+   <BR><BR>
+
+   <LI><b>podObs:</b> Raw L1 and L2 pseudo-range and carrier phase tracking data in RINEX 2.20 format
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podObs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+
+   </UL>
+<LI>Orbit Determination
+    <UL>
+    <LI><b>leoOrb:</b>LEO orbit specification file. Contains LEO orbit info for the period of the download (for real time files) or for one day (for post-processed files). Specified in SP3 format
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>leoClk:</b>Clock offset values for each LEO satellite during the period specified in the file name.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    </UL>
+<LI>Atmospheric Profiles
+    <UL>
+    <LI><b>atmPhs:</b>Atmospheric excess phase file. This file is analogous to the GPS/MET 'occ' level 2 files, but it is in NetCDF format instead of tab-delimited ASCII.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>gpsBit:</b> GPS navigation data modulation bits used for processing open loop data in the lower troposphere.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gpsBit">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b>An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b>An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR> 
+
+    <LI><b>bfrPrf:</b>A low resolution (adjustable, currently 200 meter) atmospheric profile in the BUFR format useful to weather modelers.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>sonPrf:</b>Temperature, pressure and moisture profiles generated from radio sonde data from NCAR mass store
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sonPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>ecmPrf:</b>Temperature, pressure and moisture profiles generated from the ECMWF gridded analysis and colocated with occultation profiles.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ecmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+     <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>gfsPrf:</b>Vertical profile through gridded NCEP operational analysis NetCDF files.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gfsPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>eraPrf:</b> ERA-40 Interim reanalysis - Temperature, pressure and moisture profiles generated from the ERA interim model.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=eraPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    </UL>
+
+    <LI>Total Electron Content and Ionospheric profiles
+    <UL>
+    <LI><b>podTec:</b> Absolute total electron content from the POD antennas (including ionospheric occultations). The accuracy is believed to be within 1-3 TECU, but has not been verified. Note: Data arcs from some antennas may be un-calibrated for the receiver differential code bias.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podTec">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+</UL>
+</UL>
+
+<hr><a name="metopa"></a>
+
+<BR>
+<center>
+<P class=title><font color=black>MetOp-A post-processed data and derived products.  The <b>metopa</b> mission which runs month-to-month using the most recent CDAAC software starting in Jan 2012</font>
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>MetOp-A Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<P>MetOp-A Post Processed data.
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+
+
+ <UL>
+  <LI>Raw GPS Data  
+   <UL>
+   <LI><b>mtpLv0:</b>This file contains level 0 (raw binary) data from the MetOp-A satellite. 
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=mtpLv0">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+   <BR><BR>
+
+   </UL>
+
+  <LI>Orbit Determination
+    <UL>
+    <LI><b>leoOrb:</b>LEO orbit specification file. Contains LEO orbit info for the period of the download (for real time files) or for one day (for post-processed files). Specified in SP3 format
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>leoClk:</b>Clock offset values for each LEO satellite during the period specified in the file name.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    </UL>
+
+  <LI>Atmospheric Profiles
+    <UL>
+    <LI><b>atmPhs:</b>Atmospheric excess phase file. This file is analogous to the GPS/MET 'occ' level 2 files, but it is in NetCDF format instead of tab-delimited ASCII.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b>An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b>An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR> 
+
+    <LI><b>bfrPrf:</b>A low resolution (adjustable, currently 200 meter) atmospheric profile in the BUFR format useful to weather modelers.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>sonPrf:</b>Temperature, pressure and moisture profiles generated from radio sonde data from NCAR mass store
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sonPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>eraPrf:</b> ERA-40 Interim reanalysis - Temperature, pressure and moisture profiles generated from the ERA interim model.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=eraPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>gfsPrf:</b> Vertical profile through gridded NCEP operational analysis NetCDF files.       
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gfsPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    </UL>
+
+    <LI>Total Electron Content and Ionospheric profiles
+    <UL>
+    <LI><b>podTec:</b> Absolute total electron content from the POD antennas (including ionospheric occultations). The accuracy is believed to be within 1-3 TECU, but has not been verified. Note: Data arcs from some antennas may be un-calibrated for the receiver differential code bias.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podTec">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+    </UL>
+
+ </UL>
+</UL>
+
+<hr><a name="metopa2016"></a>
+
+<BR>
+<center><P class=title><font color=black>MetOp-A climate processing.  The <b>metopa2016</b> mission which runs from 2007.274 to 2015.365 (with gap of Nov-Dec. 2007 and Jan.-Feb.2008 due to unavailability of data).  Consistent CDAAC software and parameters were used.
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>MetOp-A Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<P>MetOp-A Climate Reprocessing (<b>metopa2016</b> mission)
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+
+
+ <UL>
+  <LI>Raw GPS Data  
+   <UL>
+   <LI><b>mtpLv0:</b>This file contains level 0 (raw binary) data from the MetOp-A satellite. 
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=mtpLv0">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+   <BR><BR>
+
+   <LI><b>podCrx:</b> Raw L1 and L2 pseudo-range and carrier phase tracking data in compressed RINEX 2.20 format
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podCrx">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   </UL>
+
+
+  <LI>Orbit Determination
+    <UL>
+    <LI><b>leoOrb:</b>LEO orbit specification file. Contains LEO orbit info for the period of the download (for real time files) or for one day (for post-processed files). Specified in SP3 format
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>leoClk:</b>Clock offset values for each LEO satellite during the period specified in the file name.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    </UL>
+
+  <LI>Atmospheric Profiles
+    <UL>
+    <LI><b>atmPhs:</b>Atmospheric excess phase file. This file is analogous to the GPS/MET 'occ' level 2 files, but it is in NetCDF format instead of tab-delimited ASCII.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b>An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b>An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR> 
+
+    <LI><b>bfrPrf:</b>A low resolution (adjustable, currently 200 meter) atmospheric profile in the BUFR format useful to weather modelers.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>sonPrf:</b>Temperature, pressure and moisture profiles generated from radio sonde data from NCAR mass store
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sonPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>eraPrf:</b> ERA-40 Interim reanalysis - Temperature, pressure and moisture profiles generated from the ERA interim model.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=eraPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>gfsPrf:</b> Vertical profile through gridded NCEP operational analysis NetCDF files.       
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gfsPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+    <LI><b>mmcGrd:</b>Grid of averaged radio occultation data, an <b>MMC</b> grid, where MMC means Monthly Mean Climatology. 
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=mmcGrd">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+    </UL>
+
+    <LI>Total Electron Content and Ionospheric profiles
+    <UL>
+    <LI><b>podTec:</b> Absolute total electron content from the POD antennas (including ionospheric occultations). The accuracy is believed to be within 1-3 TECU, but has not been verified. Note: Data arcs from some antennas may be un-calibrated for the receiver differential code bias.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podTec">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+ </UL>
+</UL>
+
+
+
+
+<hr><a name="metopb"></a>
+
+<BR>
+<center>
+<P class=title><font color=black>MetOp-B post-processed data and derived products.</font>
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>MetOp-B Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<P>MetOp-B Post Processed data.
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+
+
+ <UL>
+  <LI>Raw GPS Data  
+   <UL>
+   <LI><b>mtpLv0:</b>This file contains level 0 (raw binary) data from the MetOp-A satellite. 
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=mtpLv0">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+   <BR><BR>
+   </UL>
+ 
+ <LI>Orbit Determination
+    <UL>
+    <LI><b>leoOrb:</b>LEO orbit specification file. Contains LEO orbit info for the period of the download (for real time files) or for one day (for post-processed files). Specified in SP3 format
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>leoClk:</b>Clock offset values for each LEO satellite during the period specified in the file name.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    </UL>
+
+  <LI>Atmospheric Profiles
+    <UL>
+    <LI><b>atmPhs:</b>Atmospheric excess phase file. This file is analogous to the GPS/MET 'occ' level 2 files, but it is in NetCDF format instead of tab-delimited ASCII.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b>An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b>An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR> 
+
+    <LI><b>bfrPrf:</b>A low resolution (adjustable, currently 200 meter) atmospheric profile in the BUFR format useful to weather modelers.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>sonPrf:</b>Temperature, pressure and moisture profiles generated from radio sonde data from NCAR mass store
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sonPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>eraPrf:</b> ERA-40 Interim reanalysis - Temperature, pressure and moisture profiles generated from the ERA interim model.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=eraPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>gfsPrf:</b> Vertical profile through gridded NCEP operational analysis NetCDF files.       
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gfsPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    </UL>
+
+    <LI>Total Electron Content and Ionospheric profiles
+    <UL>
+    <LI><b>podTec:</b> Absolute total electron content from the POD antennas (including ionospheric occultations). The accuracy is believed to be within 1-3 TECU, but has not been verified. Note: Data arcs from some antennas may be un-calibrated for the receiver differential code bias.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podTec">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    </UL>
+
+ </UL>
+</UL>
+
+
+<hr><a name="metopb2016"></a>
+
+<BR>
+<center><P class=title><font color=black>MetOp-A climate processing.  The <b>metopb2016</b> mission which runs from 2013 - 2015.  Consistent CDAAC software and parameters were used.
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>MetOp-A Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<P>MetOp-B Climate Reprocessing (<b>metopb2016</b> mission)
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+
+
+ <UL>
+  <LI>Raw GPS Data  
+   <UL>
+   <LI><b>mtpLv0:</b>This file contains level 0 (raw binary) data from the MetOp-A satellite. 
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=mtpLv0">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a> 
+   <BR><BR>
+
+   <LI><b>podCrx:</b> Raw L1 and L2 pseudo-range and carrier phase tracking data in compressed RINEX 2.20 format
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podCrx">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   </UL>
+
+
+  <LI>Orbit Determination
+    <UL>
+    <LI><b>leoOrb:</b>LEO orbit specification file. Contains LEO orbit info for the period of the download (for real time files) or for one day (for post-processed files). Specified in SP3 format
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>leoClk:</b>Clock offset values for each LEO satellite during the period specified in the file name.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoClk">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    </UL>
+
+  <LI>Atmospheric Profiles
+    <UL>
+    <LI><b>atmPhs:</b>Atmospheric excess phase file. This file is analogous to the GPS/MET 'occ' level 2 files, but it is in NetCDF format instead of tab-delimited ASCII.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b>An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b>An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR> 
+
+    <LI><b>bfrPrf:</b>A low resolution (adjustable, currently 200 meter) atmospheric profile in the BUFR format useful to weather modelers.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>sonPrf:</b>Temperature, pressure and moisture profiles generated from radio sonde data from NCAR mass store
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sonPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>eraPrf:</b> ERA-40 Interim reanalysis - Temperature, pressure and moisture profiles generated from the ERA interim model.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=eraPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>gfsPrf:</b> Vertical profile through gridded NCEP operational analysis NetCDF files.       
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gfsPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+    <LI><b>mmcGrd:</b>Grid of averaged radio occultation data, an <b>MMC</b> grid, where MMC means Monthly Mean Climatology. 
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=mmcGrd">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+
+    </UL>
+
+    <LI>Total Electron Content and Ionospheric profiles
+    <UL>
+    <LI><b>podTec:</b> Absolute total electron content from the POD antennas (including ionospheric occultations). The accuracy is believed to be within 1-3 TECU, but has not been verified. Note: Data arcs from some antennas may be un-calibrated for the receiver differential code bias.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podTec">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+ </UL>
+</UL>
+
+
+
+
+
+<hr><a name="champ2016"></a>
+
+<BR>
+<center><P class=title><font color=black>CHAMP climate processing.  The <b>champ2016</b> mission which runs from 2001.139 to 2008.279.  Consistent CDAAC software and parameters were used.
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>CHAMP Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<P>CHAMP Climate Reprocessing (<b>champ2016</b> mission)
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<BR>
+<P><font face="Arial, Helvetica" color="blue"><B>CHAMP data and derived products</b></font>
+
+<UL>
+<LI>Raw GPS Data
+   <UL>
+   <LI><b>chpLv0:</b>Raw binary data from the CHAllenging Minisatellite Payload (CHAMP) satellite launched by GFZ in Germany.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=chpLv0">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+
+   <LI><b>chpAcc:</b>Preprocessed and calibrated CHAMP accelerometer data.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=chpAcc">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+   <BR><BR>
+   </UL>
+
+    <LI>Orbit Determination
+    <UL>
+    <LI><b>leoOrb:</b>LEO orbit specification file. Contains LEO orbit info for the period of the download (for real time files) or for one day (for post-processed files). Specified in SP3 format
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=leoOrb">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+    </UL>
+
+    <LI>Atmospheric Profiles
+    <UL>
+    <LI><b>atmPhs:</b>Atmospheric excess phase file. This file is analogous to the GPS/MET 'occ' level 2 files, but it is in NetCDF format instead of tab-delimited ASCII.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>atmPrf:</b>An atmospheric profile without moisture information.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=atmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>wetPrf:</b>An atmospheric occultation profile with moisture information included.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=wetPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>bfrPrf:</b>A low resolution (adjustable, currently 200 meter) atmospheric profile in the BUFR format useful to weather modelers.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bfrPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>sonPrf:</b>Temperature, pressure and moisture profiles generated from radio sonde data from NCAR mass store
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=sonPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>ecmPrf:</b>Temperature, pressure and moisture profiles generated from the ECMWF gridded analysis and colocated with occultation profiles.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ecmPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>gfsPrf:</b>Vertical profile through gridded NCEP operational analysis NetCDF files.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=gfsPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+    </UL>
+
+
+    <LI>Total Electron Content and Ionospheric profiles
+    <UL>
+
+    <LI><b>ionTec:</b>Absolute total electron content from the occultation antenna. The accuracy is believed to be within 1-3 TECU, but has not been verified.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ionTec">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>podTec:</b>Absolute total electron content from the zenith POD antenna. The accuracy is believed to be within 1-3 TECU, but has not been verified.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=podTec">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>ionPhs:</b>Ionospheric excess phases and auxiliary data used for generating ionospheric profiles. Note: No differencing is applied - expect receiver clock errors on L1 and L2.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ionPhs">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+
+    <LI><b>ionPrf:</b>Ionospheric profiles of electron density. The accuracy is genereally about 10<sup>4</sup>-10<sup>5</sup> cm<sup>-3</sup>. Caveats: Some profiles may be affected by cycle-slips.
+    <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=ionPrf">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a class="nav" href="/cdaac/tar/rest.html">Data Access</a>
+    <BR><BR>
+    </UL>
+</UL>
+
+
+
+
+
+
+<hr><a name="fid"></a>
+<BR>
+<center>
+<P class=title><font color=black>GPS Data Products</font>
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>GPS Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+<P>GPS Post Processed data.
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<BR>
+<P><font face="Arial, Helvetica" color="blue"><B>FID data and derived products</b></font>
+
+<UL>
+<LI><b>bitArc:</b> GPS data bits hourly archive files.
+<BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bitArc">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a class="nav" href="/cdaac/rest/tarservice/list/fid/bitArc/2006.018-2016.182">Data Access</a>
+<BR><BR>
+</UL>
+
+
+<hr><a name="fidrt"></a>
+<BR>
+<center>
+<P class=title><font color=black>GPS Data Products</font>
+</center>
+
+<center>
+<table class="decor" cellspacing="1" cellpadding="8" border="1" width="100%">
+<TR class="decor-hdr" align="middle">
+<TH align="left"><B>GPS Data </B></TH>
+</TR>
+
+<TR class="decor-line">
+<TD>
+
+<P>GPS Real Time data.
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<BR>
+<P><font face="Arial, Helvetica" color="blue"><B>Real-time GPS data</b></font>
+
+<UL>
+<LI>Raw Data
+   <UL>
+   <LI><b>fidTrp:</b>Tropospheric Zenith Delays above fiducial sites. 
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=fidTrp">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/login/fidrt/level1b/fidTrp/">Data Access</a>
+   <BR><BR>
+
+   <LI><b>bitArc:</b> GPS data bits hourly archive files.
+   <BR><a class="nav" href="/cdaac/cgi_bin/fileFormats.cgi?type=bitArc">File Description</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a class="nav" href="/cdaac/login/fidrt/level1a/bitArc/">Data Access</a>
+   <BR><BR>
+   </UL>
+</UL>
+
+<BR><BR><BR><BR><BR><BR><BR>
+
+
+
+        </TD> <!-- end center cell -->
+        </TR> <!-- end center row -->
+        </TABLE> <!-- end center table -->
+     </CENTER>
+     </TD>
+     <!-- end center cell -->
+     </TR> <!-- end content row -->
+     </TABLE><!---End of white total content able--->
+
+  </TD><!-- end content cell -->
+  </TR><!-- end content row -->
+
+  <TR style="background-image:url(/images/space2.gif)"><!---blue bottom row--->
+  <TD height="17"><!---blue bottom bar--->
+    <TABLE>
+    <TR>
+    <TD><P class="nav top">|&nbsp;&nbsp; Comments: maggie[at]ucar[dot]edu&nbsp;&nbsp;|<BR>
+    </TD>
+    <TD><P class="nav top">|&nbsp;&nbsp;Last Modified: <font color="blue">2018</font>&nbsp;&nbsp;|<BR>
+    </TD>
+    <TD><p class="nav top">|&nbsp;&nbsp;<a class="menu"  href="http://www.ucar.edu/legal/privacy_policy.shtml"> UCAR Privacy Policy</a>&nbsp;&nbsp;|<BR>
+    </TD>
+    <TD><p class="nav top">|&nbsp;&nbsp;<a class="menu" href="http://www.ucar.edu/legal/terms_of_use.shtml"> Terms of Use </a>&nbsp;&nbsp;|
+    </TD>
+    </TD>
+    <TD><p class="nav top">|&nbsp;&nbsp;<a class="menu" href="/cdaac/copyright.html">&#169; Copyright</a>&nbsp;&nbsp;|
+    </TD>
+
+    </TR>
+    </TABLE>
+  </TD>
+  </TR>
+
+</TABLE><!---End entire table--->
+</CENTER>
+<div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>
+<BR>
+</BODY>
+</HTML>
