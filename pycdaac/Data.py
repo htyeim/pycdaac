@@ -20,11 +20,17 @@ class Data():
         self.get_content(info)
 
     def get_content(self, info):
-        print('upward_self')
+        # print('upward_self')
         data_info = info.data_info
+        if data_info['data_base'] == 'COSMIC' and \
+                data_info['data_type'] == 'podTec':
+            self.content = Data_GRACE_podTec(info)
+            return True
         if data_info['data_base'] == 'GRACE' and \
                 data_info['data_type'] == 'podTec':
             self.content = Data_GRACE_podTec(info)
+            return True
+        self.content = Data_base(info)
 
     pass
 
@@ -33,15 +39,19 @@ class Data_base():
     def __init__(self, info):
         self.info = copy.deepcopy(info)
         self.filename = info.data_info['filename']
-        self.nc = None
+        self.load_nc()
         pass
 
     def load_nc(self):
         try:
             self.nc = netCDF4.Dataset(self.filename)
         except:
+            print('error load nc file!')
             self.nc = None
-        return True
+        return self.nc
+
+    def load_data(self):
+        nc = self.load_nc()
 
     def __del__(self):
         try:
@@ -51,7 +61,20 @@ class Data_base():
             pass
 
 
-class Data_GRACE_podTec(Data_base):
+class Data_podTec(Data_base):
+    def __init__(self, info):
+        super(Data_podTec, self).__init__(info)
+        self.load_data()
+        # print('Data_podTec')
+        pass
+
+    def load_data(self):
+        nc = self.nc
+        if nc is None:
+            return
+
+
+class Data_GRACE_podTec(Data_podTec):
     def __init__(self, info):
         super(Data_GRACE_podTec, self).__init__(info)
         self.load_data()
@@ -59,7 +82,19 @@ class Data_GRACE_podTec(Data_base):
         pass
 
     def load_data(self):
-        if not super(Data_GRACE_podTec, self).load_nc():
-            print('error load nc file!')
-            return False
         nc = self.nc
+        if nc is None:
+            return
+
+
+class Data_COSMIC_podTec(Data_podTec):
+    def __init__(self, info):
+        super(Data_COSMIC_podTec, self).__init__(info)
+        self.load_data()
+        # print('Data_podTec')
+        pass
+
+    def load_data(self):
+        nc = self.nc
+        if nc is None:
+            return
